@@ -1,0 +1,52 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navbar {
+    z-index: 9999;
+}
+
+.service-icons {
+    position: relative;
+    top: 10%;
+}
+
+.image-track-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 56vmin;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: auto;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    min-width: 255vw;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none;
+    overflow: visible;
+}
+
+#image-track > .image {
+    transition: .5s ease-in-out;
+    width:40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 80% center;
+}
+
+#image-track > .image:hover {
+    transition: .5s ease-in-out;
+    width:45vmin;
+    height: 60vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
