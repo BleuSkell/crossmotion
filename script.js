@@ -70,8 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.onmousemove = e => handleOnMove(e);
     window.ontouchmove = e => handleOnMove(e.touches);
 
-    const circles = document.querySelectorAll(".service-card");
 
+
+
+    const circles = document.querySelectorAll(".service-card");
     circles.forEach(circle => {
         circle.addEventListener('click', (e) => {
             circles.forEach(circle => {
@@ -84,5 +86,28 @@ document.addEventListener("DOMContentLoaded", () => {
             circle.querySelector(".service-card-title").classList.add("hidden");
             circle.querySelector(".service-content").classList.remove("hidden");
         });
+    });
+
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        speed: 600,
+        autoplay: { delay: 6000 },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    const swiperCompanies = new Swiper('.swiper-companies', {
+        loop: true,
+        slidesPerView: 4,
+        centeredSlides: true,
+        spaceBetween: 100,
+        speed: 2000,
+        autoplay: { delay: 600 },
     });
 });

@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -45,7 +47,7 @@
     </header>
 
     <main>
-        <section class="services bg-white">
+        <section class="services bg-white pb-32">
             <div class="services-text py-32 px-56">
                 <h1 class="font-regular text-4xl mb-16 underline decoration-4 decoration-[#DD7600] underline-offset-20">
                     Welkom bij CrossMotion
@@ -164,7 +166,301 @@
                 </div>
             </div>
         </section>
+
+        <section class="projects pb-32">
+            <h1 class="font-regular text-4xl text-center text-white underline decoration-4 decoration-[#DD7600] underline-offset-20 my-24">
+                Projecten waar we trots op zijn
+            </h1>
+
+            <div class="image-track-wrapper">
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" class="">
+                    <img src="images/kreidler-home.png" alt="kreidler" class="image" draggable="false">
+                    <img src="images/duurzame-leverancier-site.png" alt="duurzame leverancier" class="image" draggable="false">
+                    <img src="images/meseda.png" alt="meseda" class="image" draggable="false">
+                    <img src="images/partsxl.png" alt="PartsXL" class="image" draggable="false">
+                    <img src="images/volleybal-taurus.png" alt="Taurus Volleybal" class="image" draggable="false">
+                    <img src="images/ydence.png" alt="ydence" class="image" draggable="false">
+                    <a href="#">
+                        <h1 class="text-6xl text-white mt-[20rem]">
+                            Bekijk al onze projecten
+                        </h1>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials bg-white py-22 px-[30rem]">
+            <h1 class="font-regular text-4xl text-center underline decoration-4 decoration-[#DD7600] underline-offset-20 pb-24">
+                Wat onze klanten zeggen
+            </h1>
+
+            <div class="swiper flex flex-col items-between justify-between">
+                <div class="flex flex-row justify-evenly w-full swiper-wrapper">
+                    <div class="customer-bubble swiper-slide bg-[#DD7600] text-white w-[30rem] p-6 relative">
+                        <span class="bubble-tail"></span>
+                        <div class="flex flex-row mb-4">
+                            <img src="images/gerwin-timmerman.jpg" alt="gerwin-timmerman" class="rounded-full w-12 h-12">
+                            <div class="ml-2">
+                                <h3 class="font-bold">Gerwin Timmerman</h3>
+                                <p class="text-gray-200">Samen Uiteen</p>
+                            </div>
+                        </div>
+                        <p>Ik heb recent mijn website ‘www.samenuiteen.nl’ laten optimaliseren door CrossMotion. Mijn website is sneller gemaakt. Ik merk het zelf als ik de site gebruik op mijn laptop of mobiel. Veel belangrijker nog, is de snelheid van mijn website volgens Google sterk verbeterd. Binnen twee weken nadat CrossMotion klaar was, zijn de bezoekersaantallen op mijn website met ruim 30% gestegen. Populaire Blogs en pagina’s op mijn site staan nu ook enkele plaatsen hoger. Ik ben er blij met dit resultaat en alles tegen de afgesproken prijs.</p>
+                    </div>
+
+                    <div class="customer-bubble swiper-slide bg-[#DD7600] text-white w-[30rem] p-6 relative">
+                        <span class="bubble-tail"></span>
+                        <div class="flex flex-row mb-4">
+                            <img src="images/coen-heere.jpg" alt="coen-heere" class="rounded-full w-12 h-12">
+                            <div class="ml-2">
+                                <h3 class="font-bold">Coen Heere</h3>
+                                <p class="text-gray-200">Kreidlerparts</p>
+                            </div>
+                        </div>
+                        <p>Snel veranderende e-commerce vraagt om flexibiliteit, meedenken en ontwikkelen. Juist dit is de reden dat wij onze website hebben laten ontwikkelen door CrossMotion. Veel (complexe) wensen zijn ontworpen, ontwikkeld en geïmplementeerd in samenwerking met CrossMotion. Maatwerk pur sang!</p>
+                    </div>
+
+                    <div class="customer-bubble swiper-slide bg-[#DD7600] text-white w-[30rem] p-6 relative">
+                        <span class="bubble-tail"></span>
+                        <div class="flex flex-row mb-4">
+                            <img src="images/Gerben-de-jong.png" alt="gerben-de-jong" class="rounded-full w-12 h-12">
+                            <div class="ml-2">
+                                <h3 class="font-bold">Gerben de Jong</h3>
+                                <p class="text-gray-200">SuperMegaFlex</p>
+                            </div>
+                        </div>
+                        <p>Wij worden blij van CrossMotion, ze denken in oplossingen, begrijpen ook design vraagstukken in relatie tot de techniek en helpen ons professioneel en vriendelijk bij ieder nieuw project of anpassing. Onze website draait ook zeer stabiel en werkt gewoon altijd. Zo hoort het ook, maar prettig dat het dan ook zo is. Kortom, zeer fijne partij om mee samen te werken!</p>
+                    </div>
+
+                    <div class="customer-bubble swiper-slide bg-[#DD7600] text-white w-[30rem] p-6 relative">
+                        <span class="bubble-tail"></span>
+                        <div class="flex flex-row mb-4">
+                            <img src="images/nicoline-vreezen.jpg" alt="nicoline vreezen" class="rounded-full w-12 h-12">
+                            <div class="ml-2">
+                                <h3 class="font-bold">Niconline Vreezen</h3>
+                                <p class="text-gray-200">WICS Logistics</p>
+                            </div>
+                        </div>
+                        <p>Altijd bereid te helpen en mee te denken. Super vriendelijk en enthousiast over nieuwe projecten. Wij blijven samenwerken!</p>
+                    </div>
+
+                    <div class="customer-bubble swiper-slide bg-[#DD7600] text-white w-[30rem] p-6 relative">
+                        <span class="bubble-tail"></span>
+                        <div class="flex flex-row mb-4">
+                            <img src="images/mariekedewit.jpg" alt="marieke de wit" class="rounded-full w-12 h-12">
+                            <div class="ml-2">
+                                <h3 class="font-bold">Marieke de Wit</h3>
+                                <p class="text-gray-200">Zij aan Zij</p>
+                            </div>
+                        </div>
+                        <p>Betrokkenheid, inventiviteit en flexibiliteit zijn zó belangrijk als je een nieuwe website ontwikkelt. CrossMotion heeft dat, naast hoogstaande technische kennis, allemaal in huis. Werken met CrossMotion is werken met een partner met hetzelfde doel: een mooi product!</p>
+                    </div>
+
+                    <div class="customer-bubble swiper-slide bg-[#DD7600] text-white w-[30rem] p-6 relative">
+                        <span class="bubble-tail"></span>
+                        <div class="flex flex-row mb-4">
+                            <img src="images/marin-heideman.jpg" alt="marin heideman" class="rounded-full w-12 h-12">
+                            <div class="ml-2">
+                                <h3 class="font-bold">Marin Heideman</h3>
+                                <p class="text-gray-200">DigiState</p>
+                            </div>
+                        </div>
+                        <p>Wij besteden al onze webdesign opdrachten uit aan CrossMotion. Met hun uitstekende, persoonlijke service zijn ze voor ons het perfecte webbureau!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-center pb-12">
+                <button class="bg-[#DD7600] p-4 rounded-full text-white swiper-button-prev mr-32">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="testimonial-button size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+
+                <button class="bg-[#DD7600] p-4 rounded-full text-white swiper-button-next ml-32">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="testimonial-button size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="convinced py-22 mb-22">
+            <h1 class="font-regular text-4xl text-white text-center underline decoration-4 decoration-[#DD7600] underline-offset-20 pb-16">
+                Overtuigd van ons kunnen?
+            </h1>
+
+            <div class="flex flex-col justify-center items-center">
+                <a href="#">
+                    <button class="text-white text-xl bg-[#DD7600] px-4 py-[1rem] rounded-lg mb-8">
+                        Ja? Leg je project aan ons voor
+                    </button>
+                </a>
+
+                <a href="#">
+                    <button class="text-white text-xl border-2 border-solid border-[#DD7600] px-4 py-[.9rem] rounded-lg">
+                        Nee? Neem een kijkje in ons portfolio
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section class="companies">
+            <h1 class="text-white text-4xl text-center mb-12">
+                We werken onder andere voor:
+            </h1>
+
+            <div class="companies-container swiper-companies mb-[30rem]">
+                <div class="companies-wrapper swiper-wrapper">
+                    <img class="swiper-slide" src="images/antea-group.png" alt="">
+                    <img class="swiper-slide" src="images/bouw-mensen.png" alt="">
+                    <img class="swiper-slide" src="images/dhs.png" alt="">
+                    <img class="swiper-slide" src="images/digistate.png" alt="">
+                    <img class="swiper-slide" src="images/doordropshop.png" alt="">
+                    <img class="swiper-slide" src="images/dutchsynergy.png" alt="">
+                    <img class="swiper-slide" src="images/duurzame-leverancier.png" alt="">
+                    <img class="swiper-slide" src="images/inofec.png" alt="">
+                    <img class="swiper-slide" src="images/mpluskassa.png" alt="">
+                    <img class="swiper-slide" src="images/rotterdam.png" alt="">
+                    <img class="swiper-slide" src="images/sameninzicht.png" alt="">
+                    <img class="swiper-slide" src="images/supermegaflex.png" alt="">
+                    <img class="swiper-slide" src="images/wics.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <svg class="overflow-visible" id="svgLine" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="320" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 250" preserveAspectRatio="xMinYMax">
+        <polygon points="-150,300 200,90 550,140 800,60 1100,150 1400,100 1700,10 1900,50 2500,90 2500,300" fill="#efefef" stroke="none">
+        </polygon>
+
+        <polyline points="-150,244 200,90 550,140 800,60 1100,150 1400,100 1700,10 1900,50 2500,90 2500,500" fill="none" stroke="#7668af" stroke-width="0">
+        </polyline>
+
+        <text x="170" y="20" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Tevreden klanten</text>
+        <text x="170" y="60" fill="#5f6467" style="font-size: 250%; font-weight: 300;">9.5/10</text>
+
+        <text x="510" y="60" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Magento modules</text>
+        <text x="510" y="100" fill="#5f6467" style="font-size: 250%; font-weight: 300;">15+</text>
+
+        <text x="760" y="0" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Kopjes koffie</text>
+        <text x="760" y="40" fill="#5f6467" style="font-size: 250%; font-weight: 300;">10.000+</text>
+
+        <text x="1060" y="70" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Afgeronde projecten</text>
+        <text x="1060" y="110" fill="#5f6467" style="font-size: 250%; font-weight: 300;">200+</text>
+
+        <text x="1350" y="30" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Uptime</text>
+        <text x="1350" y="70" fill="#5f6467" style="font-size: 250%; font-weight: 300;">99,9%</text>
+
+        <text x="1650" y="90" fill="#5f6467" style="font-size: 140%; font-weight: 300; font-family: 'Pacifico', cursive;">Counting..</text>
+
+        <ellipse id="svg_1" rx="15" ry="15" cx="200" cy="90" fill="#F26522" stroke="#000000" stroke-width="5"></ellipse>
+        <ellipse id="svg_2" rx="10" ry="10" cx="550" cy="140" fill="#F26522" stroke="#000000" stroke-width="5"></ellipse>
+        <ellipse id="svg_3" rx="15" ry="15" cx="800" cy="60" fill="#F26522" stroke="#000000" stroke-width="5"></ellipse>
+        <ellipse id="svg_4" rx="15" ry="15" cx="1100" cy="150" fill="#F26522" stroke="#000000" stroke-width="5"></ellipse>
+        <ellipse id="svg_5" rx="10" ry="10" cx="1400" cy="100" fill="#F26522" stroke="#000000" stroke-width="5"></ellipse>
+        <ellipse id="svg_6" rx="10" ry="10" cx="1700" cy="10" fill="#F26522" stroke="#000000" stroke-width="5"></ellipse>
+        <ellipse id="svg_7" rx="9" ry="9" cx="1900" cy="50" fill="#F26522" stroke="#000000" stroke-width="5"></ellipse>
+
+        <defs>
+            <linearGradient id="BglinierGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop id="BgLinierGradientStop_1" stop-opacity="1" stop-color="#e8f3f5" offset="0"></stop>
+                <stop id="BgLinierGradientStop_2" stop-opacity="1" stop-color="#e8f3f5" offset="1"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+    <footer class="bg-white flex flex-col">
+        <div class="flex flex-row justify-between">
+            <div>
+                <h3>
+                    OVER ONS
+                </h3>
+
+                <p>
+                    CrossMotion is een full service bureau. Zo kunt u bij ons voor zowel een mooi vormgegeven website terecht evenals een goed functionerend  beheersysteem.
+                </p>
+            </div>
+
+            <div>
+                <h3>
+                    INFORMATIE
+                </h3>
+
+                <ul>
+                    <li>
+                        Over CrossMotion
+                    </li>
+
+                    <li>
+                        Portfolio
+                    </li>
+
+                    <li>
+                        Domein registratie
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>
+                    LINKS
+                </h3>
+
+                <ul>
+                    <li>
+                        Contactformulier
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>
+                    CONTACT
+                </h3>
+
+                <div>
+                    <p>
+                        CrossMotion
+                    </p>
+                    <p>
+                        Betuwehaven 16
+                    </p>
+                    <p>
+                        3433 PV Nieuwegein
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        Tel: 0308200217
+                    </p>
+                    <p>
+                        info@crossmotion.nl
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-between">
+            <p>
+                Copyright 2025 CrossMotion
+            </p>
+
+            <div>
+                <a>
+                    Algemene voorwaarden
+                </a>
+
+                <a>
+                    Disclaimer
+                </a>
+
+                <a>
+                    Privacy verklaring
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script>
         AOS.init();
