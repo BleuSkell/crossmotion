@@ -9,9 +9,71 @@ body {
     z-index: 9999;
 }
 
-.service-icons {
+.services-circle {
     position: relative;
-    top: 10%;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    border:2px solid #912900;
+}
+
+.service-card {
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    height: 200px;
+    width: 200px;
+    background-color: #DD7600;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.service-card:nth-child(1) {
+    transform: rotate(45deg) translateX(400px);
+}
+.service-card:nth-child(2) {
+    transform: rotate(135deg) translateX(400px);
+}
+.service-card:nth-child(3) {
+    transform: rotate(225deg) translateX(400px);
+}
+.service-card:nth-child(4) {
+    transform: rotate(-45deg) translateX(400px);
+}
+
+.service-card:nth-child(1) .service-card-title {
+    transform: rotate(-45deg) translate(-45px, 47px);
+}
+.service-card:nth-child(2) .service-card-title {
+    transform: rotate(-135deg) translate(-57px, -54px);
+}
+.service-card:nth-child(3) .service-card-title {
+    transform: rotate(-225deg) translate(59px, -58px);
+}
+.service-card:nth-child(4) .service-card-title {
+    transform: rotate(45deg) translate(47px, 47px);
+}
+
+.service-card:nth-child(1) .service-content {
+    transform: rotate(-45deg) translate(14px, 67px);
+}
+.service-card:nth-child(2) .service-content {
+    transform: rotate(-135deg) translate(-55px, 4px);
+}
+.service-card:nth-child(3) .service-content {
+    transform: rotate(-225deg) translate(52px, -55px);
+}
+.service-card:nth-child(4) .service-content {
+    transform: rotate(45deg) translate(87px, 14px);
+}
+
+.active {
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    height: 400px;
+    width: 400px;
+    cursor: default;
 }
 
 .image-track-wrapper {

@@ -69,5 +69,20 @@ document.addEventListener("DOMContentLoaded", () => {
     window.ontouchend = e => handleOnUp(e.touches);
     window.onmousemove = e => handleOnMove(e);
     window.ontouchmove = e => handleOnMove(e.touches);
-});
 
+    const circles = document.querySelectorAll(".service-card");
+
+    circles.forEach(circle => {
+        circle.addEventListener('click', (e) => {
+            circles.forEach(circle => {
+                circle.classList.remove("active");
+                circle.querySelector(".service-card-title").classList.remove("hidden");
+                circle.querySelector(".service-content").classList.add("hidden");
+            });
+
+            circle.classList.add("active");
+            circle.querySelector(".service-card-title").classList.add("hidden");
+            circle.querySelector(".service-content").classList.remove("hidden");
+        });
+    });
+});
