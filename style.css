@@ -5,8 +5,9 @@ body {
     background-color: black;
 }
 
-.navbar {
-    z-index: 9999;
+.navbar-container {
+    z-index: 10;
+    position: relative;
 }
 
 .services-circle {
@@ -83,6 +84,7 @@ body {
     overflow-x: hidden;
     overflow-y: visible;
     margin: auto;
+    z-index: 1;
 }
 
 #image-track {
@@ -95,6 +97,7 @@ body {
     transform: translate(0%, -50%);
     user-select: none;
     overflow: visible;
+    z-index: 1;
 }
 
 #image-track > .image {
@@ -103,6 +106,7 @@ body {
     height: 56vmin;
     object-fit: cover;
     object-position: 80% center;
+    z-index: 1;
 }
 
 #image-track > .image:hover {
@@ -111,6 +115,7 @@ body {
     height: 60vmin;
     object-fit: cover;
     object-position: 100% center;
+    z-index: 1;
 }
 
 .customer-bubble {
@@ -138,6 +143,11 @@ body {
 }
 
 .testimonial-button {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.testimonial-button-icon {
     color: #ffffff;
 }
 

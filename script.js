@@ -110,4 +110,14 @@ document.addEventListener("DOMContentLoaded", () => {
         speed: 2000,
         autoplay: { delay: 600 },
     });
+
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add("bg-black");
+        } else {
+            navbar.classList.remove("bg-black");
+        }
+    });
 });

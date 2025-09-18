@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <title>Crossmotion - Webdesign Nieuwegein</title>
@@ -14,8 +14,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar text-white flex justify-center">
-            <div class="w-1/2 flex flex-row justify-evenly items-center fixed p-10">
+        <nav class="navbar-container text-white flex justify-center">
+            <div class="navbar w-full flex flex-row justify-evenly items-center fixed py-10 px-[25%] transition-colors">
                 <a href="#" class="hover:text-neutral-400">
                     OVER ONS
                 </a>
@@ -34,7 +34,7 @@
             </div>
         </nav>
 
-        <div class="banner bg-[url(images/buildings_cross.png)] h-[80vh] bg-cover bg-center text-white">
+        <div class="banner bg-[url(images/buildings_cross.png)] h-[80vh] bg-cover bg-center text-white relative z-2">
             <div class="flex flex-col h-[100%] justify-end p-32">
                 <h1 class="font-regular text-5xl">
                     Websites Geoptimaliseerd Voor Succes!
@@ -47,8 +47,30 @@
     </header>
 
     <main>
-        <section class="services bg-white pb-32">
-            <div class="services-text py-32 px-56">
+        <section class="services relative bg-white pb-32 overflow-hidden">
+            <div class="absolute top-[-650px] right-[-650px] w-[1300px] h-[1300px] rounded-full border-4 border-[#DD7600]"></div>
+
+            <svg class="pattern absolute bottom-0 left-0 w-full h-[300px] pointer-events-none" fill="none">
+                <circle cx="0" cy="30" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="100" cy="200" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="450" cy="150" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="900" cy="295" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="2000" cy="220" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="2350" cy="18" r="15" stroke="#DD7600" stroke-width="3"/>
+
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(50 210 50)"/>
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(20 -300 400)"/>
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 450 1000)"/>
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 550 2000)"/>
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(-45 1275 -2350)"/>
+
+                <rect x="480" y="420" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(-20 0 0)"/>
+                <rect x="1700" y="280" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(0 0 0)"/>
+                <rect x="2200" y="-1050" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
+                <rect x="2240" y="-1220" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
+            </svg>
+
+            <div class="services-text py-32 px-56 relative z-2">
                 <h1 class="font-regular text-4xl mb-16 underline decoration-4 decoration-[#DD7600] underline-offset-20">
                     Welkom bij CrossMotion
                 </h1>
@@ -189,7 +211,25 @@
             </div>
         </section>
 
-        <section class="testimonials bg-white py-22 px-[30rem]">
+        <section class="testimonials relative overflow-hidden bg-white py-22 px-[30rem]">
+            <svg class="pattern absolute bottom-0 left-0 w-full h-[300px] pointer-events-none" fill="none">
+                <circle cx="0" cy="30" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="100" cy="200" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="450" cy="150" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="900" cy="295" r="15" stroke="#DD7600" stroke-width="3"/>
+                <circle cx="2000" cy="220" r="15" stroke="#DD7600" stroke-width="3"/>
+
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(50 210 50)"/>
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(20 -300 400)"/>
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 550 2000)"/>
+                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(-45 1275 -2350)"/>
+
+                <rect x="480" y="420" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(-20 0 0)"/>
+                <rect x="1700" y="280" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(0 0 0)"/>
+                <rect x="2200" y="-1050" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
+                <rect x="2240" y="-1220" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
+            </svg>
+
             <h1 class="font-regular text-4xl text-center underline decoration-4 decoration-[#DD7600] underline-offset-20 pb-24">
                 Wat onze klanten zeggen
             </h1>
@@ -271,14 +311,14 @@
             </div>
 
             <div class="flex flex-row justify-center pb-12">
-                <button class="bg-[#DD7600] p-4 rounded-full text-white swiper-button-prev mr-32">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="testimonial-button size-6">
+                <button class="testimonial-button bg-[#DD7600] p-4 rounded-full text-white swiper-button-prev mr-32">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="testimonial-button-icon size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
                 </button>
 
-                <button class="bg-[#DD7600] p-4 rounded-full text-white swiper-button-next ml-32">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="testimonial-button size-6">
+                <button class="testimonial-button bg-[#DD7600] p-4 rounded-full text-white swiper-button-next ml-32">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="testimonial-button-icon size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                 </button>
@@ -337,19 +377,19 @@
         <polyline points="-150,244 200,90 550,140 800,60 1100,150 1400,100 1700,10 1900,50 2500,90 2500,500" fill="none" stroke="#7668af" stroke-width="0">
         </polyline>
 
-        <text x="170" y="20" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Tevreden klanten</text>
+        <text x="170" y="20" fill="#CFD5DA" style="font-size: 120%; font-weight: 400;">Tevreden klanten</text>
         <text x="170" y="60" fill="#5f6467" style="font-size: 250%; font-weight: 300;">9.5/10</text>
 
-        <text x="510" y="60" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Magento modules</text>
+        <text x="510" y="60" fill="#CFD5DA" style="font-size: 120%; font-weight: 400;">Magento modules</text>
         <text x="510" y="100" fill="#5f6467" style="font-size: 250%; font-weight: 300;">15+</text>
 
-        <text x="760" y="0" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Kopjes koffie</text>
+        <text x="760" y="0" fill="#CFD5DA" style="font-size: 120%; font-weight: 400;">Kopjes koffie</text>
         <text x="760" y="40" fill="#5f6467" style="font-size: 250%; font-weight: 300;">10.000+</text>
 
-        <text x="1060" y="70" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Afgeronde projecten</text>
+        <text x="1060" y="70" fill="#CFD5DA" style="font-size: 120%; font-weight: 400;">Afgeronde projecten</text>
         <text x="1060" y="110" fill="#5f6467" style="font-size: 250%; font-weight: 300;">200+</text>
 
-        <text x="1350" y="30" fill="#8b949b" style="font-size: 120%; font-weight: 400;">Uptime</text>
+        <text x="1350" y="30" fill="#CFD5DA" style="font-size: 120%; font-weight: 400;">Uptime</text>
         <text x="1350" y="70" fill="#5f6467" style="font-size: 250%; font-weight: 300;">99,9%</text>
 
         <text x="1650" y="90" fill="#5f6467" style="font-size: 140%; font-weight: 300; font-family: 'Pacifico', cursive;">Counting..</text>
@@ -369,7 +409,7 @@
             </linearGradient>
         </defs>
     </svg>
-    <footer class="bg-white flex flex-col">
+    <footer class="bg-white flex flex-col h-[25vh] justify-between px-66 py-12">
         <div class="flex flex-row justify-between">
             <div>
                 <h3>
@@ -418,7 +458,7 @@
                     CONTACT
                 </h3>
 
-                <div>
+                <div class="mb-2">
                     <p>
                         CrossMotion
                     </p>
@@ -441,17 +481,17 @@
             </div>
         </div>
 
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between text-gray-500">
             <p>
                 Copyright 2025 CrossMotion
             </p>
 
             <div>
-                <a>
+                <a class="mr-8">
                     Algemene voorwaarden
                 </a>
 
-                <a>
+                <a class="mr-8">
                     Disclaimer
                 </a>
 
