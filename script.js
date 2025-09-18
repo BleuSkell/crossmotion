@@ -78,13 +78,21 @@ document.addEventListener("DOMContentLoaded", () => {
         circle.addEventListener('click', (e) => {
             circles.forEach(circle => {
                 circle.classList.remove("active");
-                circle.querySelector(".service-card-title").classList.remove("hidden");
-                circle.querySelector(".service-content").classList.add("hidden");
+                setTimeout(() => {
+                    circle.querySelector(".service-card-title").classList.remove("hidden-fade");
+                    circle.querySelector(".service-card-title").classList.add("visible-fade");
+                    circle.querySelector(".service-content").classList.remove("visible-fade");
+                    circle.querySelector(".service-content").classList.add("hidden-fade");
+                }, 200);
             });
 
             circle.classList.add("active");
-            circle.querySelector(".service-card-title").classList.add("hidden");
-            circle.querySelector(".service-content").classList.remove("hidden");
+            setTimeout(() => {
+                circle.querySelector(".service-card-title").classList.remove("visible-fade");
+                circle.querySelector(".service-card-title").classList.add("hidden-fade");
+                circle.querySelector(".service-content").classList.remove("hidden-fade");
+                circle.querySelector(".service-content").classList.add("visible-fade");
+            }, 200);
         });
     });
 

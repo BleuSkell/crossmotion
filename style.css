@@ -28,6 +28,25 @@ body {
     border-radius: 50%;
     color: white;
     cursor: pointer;
+
+    transition: ease-in-out .5s;
+}
+
+.service-card-title, .service-content {
+    transition: opacity ease-in-out .3s;
+    opacity: 1;
+}
+
+.hidden-fade {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.visible-fade {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .service-card:nth-child(1) {
@@ -57,16 +76,16 @@ body {
 }
 
 .service-card:nth-child(1) .service-content {
-    transform: rotate(-45deg) translate(14px, 67px);
+    transform: rotate(-45deg) translate(33px, 50px);
 }
 .service-card:nth-child(2) .service-content {
-    transform: rotate(-135deg) translate(-55px, 4px);
+    transform: rotate(-135deg) translate(-36px, 35px);
 }
 .service-card:nth-child(3) .service-content {
-    transform: rotate(-225deg) translate(52px, -55px);
+    transform: rotate(-225deg) translate(29px, -30px);
 }
 .service-card:nth-child(4) .service-content {
-    transform: rotate(45deg) translate(87px, 14px);
+    transform: rotate(45deg) translate(66px, -3px);
 }
 
 .active {
