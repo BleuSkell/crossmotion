@@ -12,22 +12,34 @@
 <body>
     <header>
         <nav class="navbar-container text-white flex justify-center">
-            <div class="navbar bg-black/50 w-full flex flex-row justify-evenly items-center fixed h-16 px-[25%] transition-colors">
-                <a href="#" class="hover:text-neutral-400">
-                    OVER ONS
+            <div class="navbar bg-black/50 w-full flex justify-between items-center fixed h-16 px-6 md:px-[25%] transition-colors z-50">
+                <!-- Logo -->
+                <a href="#" class="flex-shrink-0">
+                    <img loading="lazy" src="images/CrossMotion_x.webp" alt="CrossMotion logo X" class="h-10">
                 </a>
-                <a href="#" class="hover:text-neutral-400">
-                    ONZE DIENSTEN
-                </a>
-                <a href="#">
-                    <img loading="lazy" src="images/CrossMotion_x.webp" alt="CrossMotion logo X" class="w-2/3">
-                </a>
-                <a href="#" class="hover:text-neutral-400">
-                    PORTFOLIO
-                </a>
-                <a href="#" class="hover:text-neutral-400">
-                    CONTACT
-                </a>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex gap-8 items-center">
+                    <a href="#" class="hover:text-neutral-400">OVER ONS</a>
+                    <a href="#" class="hover:text-neutral-400">ONZE DIENSTEN</a>
+                    <a href="#" class="hover:text-neutral-400">PORTFOLIO</a>
+                    <a href="#" class="hover:text-neutral-400">CONTACT</a>
+                </div>
+
+                <!-- Hamburger knop -->
+                <button id="menu-toggle" class="md:hidden focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden flex-col bg-black/90 text-white fixed top-16 left-0 w-full py-6 space-y-4 text-center md:hidden">
+                <a href="#" class="hover:text-neutral-400">OVER ONS</a>
+                <a href="#" class="hover:text-neutral-400">ONZE DIENSTEN</a>
+                <a href="#" class="hover:text-neutral-400">PORTFOLIO</a>
+                <a href="#" class="hover:text-neutral-400">CONTACT</a>
             </div>
         </nav>
 
