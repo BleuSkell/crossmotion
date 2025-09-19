@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 300" fill="none">
+    <circle cx="0" cy="30" r="15" stroke="#DD7600" stroke-width="3"/>
+    <circle cx="100" cy="200" r="15" stroke="#DD7600" stroke-width="3"/>
+    <circle cx="450" cy="150" r="15" stroke="#DD7600" stroke-width="3"/>
+    <circle cx="900" cy="295" r="15" stroke="#DD7600" stroke-width="3"/>
+    <circle cx="2000" cy="220" r="15" stroke="#DD7600" stroke-width="3"/>
+    <circle cx="2350" cy="18" r="15" stroke="#DD7600" stroke-width="3"/>
+
+    <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(50 210 50)"/>
+    <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(20 -300 400)"/>
+    <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 450 1000)"/>
+    <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 550 2000)"/>
+    <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(-45 1275 -2350)"/>
+
+    <rect x="480" y="420" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(-20 0 0)"/>
+    <rect x="1700" y="280" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(0 0 0)"/>
+    <rect x="2200" y="-1050" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
+    <rect x="2240" y="-1220" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
+</svg>

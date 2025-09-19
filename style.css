@@ -36,6 +36,10 @@ body {
     transition: ease-in-out .5s;
 }
 
+.service-card:hover {
+    background-color: #b85c0c;
+}
+
 .service-card-title, .service-content {
     transition: opacity ease-in-out .3s;
     opacity: 1;

@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     closeAllServiceCards();
 
     const testimonialSwiper = new Swiper('.testimonial-swiper', {
+        lazy: true,
         loop: true,
         slidesPerView: 3,
         spaceBetween: 30,
@@ -46,28 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const swiperCompanies = new Swiper('.swiper-companies', {
+        lazy: true,
         loop: true,
         slidesPerView: 4,
         centeredSlides: true,
         spaceBetween: 100,
         speed: 2000,
-        autoplay: { delay: 600, disableOnInteraction: false },
+        autoplay: { delay: 3000, disableOnInteraction: false },
     });
 
     const projectsSwiper = new Swiper('.projects-swiper', {
+        lazy: true,
         slidesPerView: 3,
         spaceBetween: 200,
         enabled: true,
         sticky: false,
-    });
-
-
-    const navbar = document.querySelector(".navbar");
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            navbar.classList.add("bg-black");
-        } else {
-            navbar.classList.remove("bg-black");
-        }
     });
 });

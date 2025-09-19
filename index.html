@@ -8,7 +8,7 @@
 <body>
     <header>
         <nav class="navbar-container text-white flex justify-center">
-            <div class="navbar w-full flex flex-row justify-evenly items-center fixed py-10 px-[25%] transition-colors">
+            <div class="navbar bg-black/50 w-full flex flex-row justify-evenly items-center fixed py-8 px-[25%] transition-colors">
                 <a href="#" class="hover:text-neutral-400">
                     OVER ONS
                 </a>
@@ -16,7 +16,7 @@
                     ONZE DIENSTEN
                 </a>
                 <a href="#">
-                    <img loading="lazy" src="images/CrossMotion_x.webp" alt="CrossMotion logo X">
+                    <img loading="lazy" src="images/CrossMotion_x.webp" alt="CrossMotion logo X" class="w-2/3">
                 </a>
                 <a href="#" class="hover:text-neutral-400">
                     PORTFOLIO
@@ -43,25 +43,7 @@
         <section class="services relative bg-white pb-32 overflow-hidden">
             <div class="absolute top-[-650px] right-[-650px] w-[1300px] h-[1300px] rounded-full border-4 border-[#DD7600]"></div>
 
-            <svg class="pattern absolute bottom-0 left-0 w-full h-[300px] pointer-events-none" fill="none">
-                <circle cx="0" cy="30" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="100" cy="200" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="450" cy="150" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="900" cy="295" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="2000" cy="220" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="2350" cy="18" r="15" stroke="#DD7600" stroke-width="3"/>
-
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(50 210 50)"/>
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(20 -300 400)"/>
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 450 1000)"/>
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 550 2000)"/>
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(-45 1275 -2350)"/>
-
-                <rect x="480" y="420" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(-20 0 0)"/>
-                <rect x="1700" y="280" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(0 0 0)"/>
-                <rect x="2200" y="-1050" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
-                <rect x="2240" y="-1220" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
-            </svg>
+            <img class="pattern absolute bottom-0 left-0 w-full h-[385px] pointer-events-none" src="images/pattern.svg" alt="pattern" loading="lazy" />
 
             <div class="services-text py-32 px-56 relative z-2">
                 <h1 class="font-regular text-4xl mb-16 underline decoration-4 decoration-[#DD7600] underline-offset-20">
@@ -252,28 +234,12 @@
             </div>
 
             <h3 class="text-white text-center text-2xl">
-                Geïnteresseerd? <span><a href="#" class="text-[#DD7600]">Bekijk al onze projecten!</a></span>
+                Geïnteresseerd? <span><a href="#" class="text-[#DD7600] hover:text-[#b85c0c]">Bekijk al onze projecten!</a></span>
             </h3>
         </section>
 
         <section class="testimonials relative overflow-hidden bg-white py-22 px-[30rem]">
-            <svg class="pattern absolute bottom-0 left-0 w-full h-[300px] pointer-events-none" fill="none">
-                <circle cx="0" cy="30" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="100" cy="200" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="450" cy="150" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="900" cy="295" r="15" stroke="#DD7600" stroke-width="3"/>
-                <circle cx="2000" cy="220" r="15" stroke="#DD7600" stroke-width="3"/>
-
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(50 210 50)"/>
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(20 -300 400)"/>
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(35 550 2000)"/>
-                <polygon points="157,130 175,95 193,130" stroke="#DD7600" stroke-width="3" fill="none" transform="rotate(-45 1275 -2350)"/>
-
-                <rect x="480" y="420" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(-20 0 0)"/>
-                <rect x="1700" y="280" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(0 0 0)"/>
-                <rect x="2200" y="-1050" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
-                <rect x="2240" y="-1220" width="25" height="25" stroke="#DD7600" stroke-width="3" transform="rotate(30 0 0)"/>
-            </svg>
+            <img class="pattern absolute bottom-0 left-0 w-full h-[385px] pointer-events-none" src="images/pattern.svg" alt="pattern" loading="lazy" />
 
             <h1 class="font-regular text-4xl text-center underline decoration-4 decoration-[#DD7600] underline-offset-20 pb-24">
                 Wat onze klanten zeggen
@@ -377,13 +343,13 @@
 
             <div class="flex flex-col justify-center items-center">
                 <a href="#">
-                    <button class="text-white text-xl bg-[#DD7600] px-4 py-[1rem] rounded-lg mb-8">
+                    <button class="text-white text-xl bg-[#DD7600] hover:bg-[#b85c0c] px-4 py-[1rem] rounded-lg mb-8 cursor-pointer">
                         Ja? Leg je project aan ons voor
                     </button>
                 </a>
 
                 <a href="#">
-                    <button class="text-white text-xl border-2 border-solid border-[#DD7600] px-4 py-[.9rem] rounded-lg">
+                    <button class="text-white text-xl border-2 border-solid border-[#DD7600] hover:border-[#b85c0c] px-4 py-[.9rem] rounded-lg cursor-pointer">
                         Nee? Neem een kijkje in ons portfolio
                     </button>
                 </a>
@@ -557,9 +523,6 @@
         window.addEventListener("load", () => {
             setTimeout(() => AOS.init(), 100);
         });
-    </script>
-    <script defer>
-        AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
     <script src="script.js" defer></script>
