@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     const circles = document.querySelectorAll(".service-card");
+    function closeAllServiceCards() {
+        circles.forEach(circle => {
+            circle.classList.remove("active");
+            setTimeout(() => {
+                circle.querySelector(".service-card-title").classList.remove("hidden-fade");
+                circle.querySelector(".service-card-title").classList.add("visible-fade");
+                circle.querySelector(".service-content").classList.remove("visible-fade");
+                circle.querySelector(".service-content").classList.add("hidden-fade");
+            }, 200);
+        });
+    }
     circles.forEach(circle => {
         circle.addEventListener('click', (e) => {
-            circles.forEach(circle => {
-                circle.classList.remove("active");
-                setTimeout(() => {
-                    circle.querySelector(".service-card-title").classList.remove("hidden-fade");
-                    circle.querySelector(".service-card-title").classList.add("visible-fade");
-                    circle.querySelector(".service-content").classList.remove("visible-fade");
-                    circle.querySelector(".service-content").classList.add("hidden-fade");
-                }, 200);
-            });
+            e.stopPropagation();
+
+            closeAllServiceCards();
 
             circle.classList.add("active");
             setTimeout(() => {
@@ -21,14 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 200);
         });
     });
+    document.addEventListener('click', e => {
+        if (!e.target.closest(".service-card")) {
+            closeAllServiceCards();
+        }
+    });
+    closeAllServiceCards();
 
     const testimonialSwiper = new Swiper('.testimonial-swiper', {
         loop: true,
         slidesPerView: 3,
-        centeredSlides: true,
         spaceBetween: 30,
         speed: 600,
-        autoplay: { delay: 6000 },
 
         navigation: {
             nextEl: '.swiper-button-next',
@@ -42,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         centeredSlides: true,
         spaceBetween: 100,
         speed: 2000,
-        autoplay: { delay: 600 },
+        autoplay: { delay: 600, disableOnInteraction: false },
     });
 
     const projectsSwiper = new Swiper('.projects-swiper', {
