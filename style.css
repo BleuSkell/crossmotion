@@ -178,9 +178,6 @@ body {
     transition: all .2s;
 }
 
-.project-slide:hover {
-    width: 35% !important;
-}
 .project-slide:hover .project-slide-text {
     opacity: .7;
 }
