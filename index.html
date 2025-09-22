@@ -19,51 +19,126 @@
     </div>
 
     <header>
-        <nav class="relative bg-black/50">
-            <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
-                <div class="relative flex h-16 items-center justify-center">
-                    <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
-                        <!-- Mobile menu button-->
-                        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-[#DD7600]">
-                            <span class="absolute -inset-0.5"></span>
-                            <span class="sr-only">Open main menu</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
-                                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
-                                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="flex items-center justify-center sm:items-stretch sm:justify-start">
-                        <!-- Desktop links-->
-                        <div class="hidden lg:ml-0 md:ml-6 md:block">
+        <nav class="navbar relative">
+            <div class="fixed w-full z-50 bg-black/50">
+                <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
+                    <div class="relative flex h-16 items-center justify-center">
+                        <!-- Mobile menu button -->
+                        <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+                            <button type="button" command="--toggle" commandfor="mobile-menu"
+                                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                     class="size-6 in-aria-expanded:hidden">
+                                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                     class="size-6 not-in-aria-expanded:hidden">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Desktop Nav -->
+                        <div class="hidden md:flex items-center justify-center sm:items-stretch sm:justify-start">
                             <div class="flex lg:space-x-32 md:space-x-4">
                                 <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">OVER ONS</a>
-                                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">ONZE DIENSTEN</a>
-                                <a href="#">
-                                    <img src="images/CrossMotion_x.webp" alt="crossmotion logo" class="h-10">
-                                </a>
+
+                                <!-- Desktop dropdown diensten -->
+                                <div class="flex flex-col group relative">
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
+                                        ONZE DIENSTEN
+                                    </a>
+                                    <div class="servicesNavLinks hidden group-hover:flex flex-row absolute bg-black/80 p-4 top-12 left-0 mt-1">
+                                        <div class="flex flex-col mr-16">
+                                            <h3 class="text-white font-bold">ONTWIKKELING</h3>
+                                            <a href="#" class="text-gray-300 hover:text-white">Webdesign</a>
+                                            <a href="#" class="text-gray-300 hover:text-white">E-commerce</a>
+                                            <a href="#" class="text-gray-300 hover:text-white">Module ontwikkeling</a>
+                                            <a href="#" class="text-gray-300 hover:text-white">Maatwerk applicaties</a>
+                                        </div>
+                                        <div class="flex flex-col mr-16">
+                                            <h3 class="text-white font-bold">HOSTING</h3>
+                                            <a href="#" class="text-gray-300 hover:text-white">Shared hosting oplossingen</a>
+                                            <a href="#" class="text-gray-300 hover:text-white">Magento geoptimaliseerde hosting</a>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h3 class="text-white font-bold">ONDERHOUD</h3>
+                                            <a href="#" class="text-gray-300 hover:text-white">Magento hosting & onderhoud</a>
+                                            <a href="#" class="text-gray-300 hover:text-white">Woocommerce hosting & onderhoud</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#"><img src="images/CrossMotion_x.webp" alt="crossmotion logo" class="h-10" /></a>
                                 <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">PORTFOLIO</a>
-                                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">CONTACT</a>
+
+                                <!-- Desktop dropdown contact -->
+                                <div class="flex flex-col group relative text-gray-300">
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">CONTACT</a>
+                                    <div
+                                            class="contactNavLinks hidden group-hover:flex flex-col absolute bg-black/80 p-4 top-12 left-0 mt-1">
+                                        <div class="flex flex-col">
+                                            <h3 class="text-white font-bold">Werken bij</h3>
+                                            <a href="#" class="text-gray-300 hover:text-white">Stagiar webdevelopment</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="absolute md:hidden inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
-                        <img src="images/CrossMotion_x.webp" alt="crossmotion logo" class="w-8">
-                    </div>
-                </div>
-            </div>
 
-            <el-disclosure id="mobile-menu" hidden class="block md:hidden">
-                <!-- Mobile links-->
-                <div class="space-y-1 px-2 pt-2 pb-3">
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">OVER ONS</a>
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">ONZE DIENSTEN</a>
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">PORTFOLIO</a>
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">CONTACT</a>
+                        <!-- Mobile Logo -->
+                        <div class="absolute md:hidden inset-y-0 right-0 flex items-center pr-2">
+                            <img src="images/CrossMotion_x.webp" alt="crossmotion logo" class="w-8" />
+                        </div>
+                    </div>
                 </div>
-            </el-disclosure>
+
+                <!-- Mobile menu -->
+                <el-disclosure id="mobile-menu" hidden class="block md:hidden">
+                    <div class="space-y-1 px-2 pt-2 pb-3">
+                        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">OVER ONS</a>
+
+                        <!-- Mobile dropdown diensten -->
+                        <details class="text-gray-300">
+                            <summary class="cursor-pointer px-3 py-2 text-base font-medium hover:text-white">ONZE DIENSTEN</summary>
+                            <div class="ml-4">
+                                <details>
+                                    <summary class="cursor-pointer text-white font-bold">ONTWIKKELING</summary>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Webdesign</a>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">E-commerce</a>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Module ontwikkeling</a>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Maatwerk applicaties</a>
+                                </details>
+
+                                <details>
+                                    <summary class="cursor-pointer text-white font-bold">HOSTING</summary>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Shared hosting</a>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Magento hosting</a>
+                                </details>
+
+                                <details>
+                                    <summary class="cursor-pointer text-white font-bold">ONDERHOUD</summary>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Magento onderhoud</a>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Woocommerce onderhoud</a>
+                                </details>
+                            </div>
+                        </details>
+
+                        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-white">PORTFOLIO</a>
+
+                        <!-- Mobile dropdown contact -->
+                        <details class="text-gray-300">
+                            <summary class="cursor-pointer px-3 py-2 text-base font-medium hover:text-white">CONTACT</summary>
+                            <div class="ml-4">
+                                <details>
+                                    <summary class="cursor-pointer text-white font-bold">Werken bij</summary>
+                                    <a href="#" class="block px-3 py-1 text-gray-300 hover:text-white">Stagiar webdevelopment</a>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </el-disclosure>
+            </div>
         </nav>
 
         <div class="banner bg-[url(images/buildings_cross.webp)]
@@ -97,28 +172,28 @@
             <img class="pattern absolute bottom-0 left-0 w-full lg:h-[385px] md:h-[150px] h-[100px] pointer-events-none" src="images/pattern.svg" alt="pattern" loading="lazy" />
 
             <div class="services-text z-2 relative
-                        lg:py-32 lg:px-56 lg:mb-0
+                        lg:p-22 lg:mb-0
                         md:p-12 md:mb-16
                         p-8
             ">
                 <h1 class="font-regular underline decoration-4 decoration-[#DD7600] underline-offset-20
-                           lg:text-4xl  lg:mb-16
+                           lg:text-4xl lg:mb-16
                            text-2xl mb-8">
                     Welkom bij CrossMotion
                 </h1>
 
                 <div class="w-full">
                     <p class="
-                              lg:text-lg lg:text-right lg:mb-12 lg:pl-[55rem]
-                              md:mb-6 md:pl-0
+                              lg:text-xl lg:text-right lg:mb-12 lg:pl-[55rem]
+                              md:mb-6 md:pl-0 md:text-lg
                               text-base mb-4
                     ">
                         Je website is in veel gevallen het eerste contact dat je met je  klant hebt. Steeds vaker zelfs het enige. Het is daarom van belang dat dit eerste contact soepel verloopt en de gewenste indruk achterlaat. CrossMotion ontwikkelt websites welke opvallen door zowel techniek als vormgeving.
                     </p>
 
                     <p class="
-                              lg:text-lg lg:pr-[55rem]
-                              md:pr-0
+                              lg:text-xl lg:pr-[55rem]
+                              md:pr-0 md:text-lg
                               text-base
                     ">
                         CrossMotion is een full service bureau. Dit houdt in dat we zowel het grafische aspect, als de techniek en gebruikerservaring in huis kunnen ontwikkelen en optimaliseren. Korte lijntjes, snel schakelen en weinig overhead dus.
