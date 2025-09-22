@@ -20,24 +20,18 @@
     top: calc(50% - 100px);
     cursor: pointer;
 
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
 }
 @media screen and (width <= 768px) {
     .service-card {
         left: calc(50% - 50px);
         top: calc(50% - 50px);
-        cursor: pointer;
-
-        transition: ease-in-out .5s;
     }
 }
 @media screen and (width > 768px) and (width <= 1024px) {
     .service-card {
         left: calc(50% - 75px);
         top: calc(50% - 75px);
-        cursor: pointer;
-
-        transition: ease-in-out .5s;
     }
 }
 

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 circle.querySelector(".service-card-title").classList.add("visible-fade");
                 circle.querySelector(".service-content").classList.remove("visible-fade");
                 circle.querySelector(".service-content").classList.add("hidden-fade");
-            }, 200);
+            }, 50);
         });
         if (window.innerWidth <= 768) {
             serviceCircle.classList.remove('top-margin', 'bottom-margin');
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 circle.querySelector(".service-card-title").classList.add("hidden-fade");
                 circle.querySelector(".service-content").classList.remove("hidden-fade");
                 circle.querySelector(".service-content").classList.add("visible-fade");
-            }, 200);
+            }, 50);
             if (window.innerWidth <= 768) {
                 updateCircleWrapperMargin();
             }
