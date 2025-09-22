@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const projectsSwiper = new Swiper('.projects-swiper', {
+        lazy: true,
+        enabled: true,
+        sticky: false,
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 200,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 100,
+            },
+        }
+    });
+
     const testimonialSwiper = new Swiper('.testimonial-swiper', {
         lazy: true,
         loop: true,
@@ -29,24 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
             1024: {
                 slidesPerView: 4,
                 spaceBetween: 100,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 100,
-            }
-        }
-    });
-
-    const projectsSwiper = new Swiper('.projects-swiper', {
-        lazy: true,
-        slidesPerView: 3,
-        spaceBetween: 200,
-        enabled: true,
-        sticky: false,
-        breakpoints: {
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 200,
             },
             768: {
                 slidesPerView: 2,
