@@ -14,30 +14,38 @@ body {
     position: relative;
 }
 
-.services-circle {
-    position: relative;
-    height: 800px;
-    width: 800px;
-    border-radius: 50%;
-    border:2px solid #912900;
+@media screen and (max-width: 640px) {
+    .services-circle {
+        margin-top: 0;
+        margin-bottom: 0;
+        transition: margin-top .5s cubic-bezier(0.54, 1.5, 0.38, 1),
+        margin-bottom .5s cubic-bezier(0.54, 1.5, 0.38, 1);
+    }
+    .services-circle.top-margin {
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+    .services-circle.bottom-margin {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
 }
 
 .service-card {
-    position: absolute;
     left: calc(50% - 100px);
     top: calc(50% - 100px);
-    height: 200px;
-    width: 200px;
-    background-color: #DD7600;
-    border-radius: 50%;
-    color: white;
     cursor: pointer;
 
     transition: ease-in-out .5s;
 }
+@media screen and (max-width: 640px) {
+    .service-card {
+        left: calc(50% - 50px);
+        top: calc(50% - 50px);
+        cursor: pointer;
 
-.service-card:hover {
-    background-color: #b85c0c;
+        transition: ease-in-out .5s;
+    }
 }
 
 .service-card-title, .service-content {
@@ -69,12 +77,26 @@ body {
 .service-card:nth-child(4) {
     transform: rotate(-45deg) translateX(400px);
 }
+@media screen and (max-width: 640px) {
+    .service-card:nth-child(1) {
+        transform: rotate(45deg) translateX(200px);
+    }
+    .service-card:nth-child(2) {
+        transform: rotate(135deg) translateX(200px);
+    }
+    .service-card:nth-child(3) {
+        transform: rotate(225deg) translateX(200px);
+    }
+    .service-card:nth-child(4) {
+        transform: rotate(-45deg) translateX(200px);
+    }
+}
 
 .service-card:nth-child(1) .service-card-title {
     transform: rotate(-45deg) translate(-45px, 47px);
 }
 .service-card:nth-child(2) .service-card-title {
-    transform: rotate(-135deg) translate(-57px, -54px);
+    transform: rotate(-135deg) translate(-58px, -56px);
 }
 .service-card:nth-child(3) .service-card-title {
     transform: rotate(-225deg) translate(59px, -58px);
@@ -82,18 +104,46 @@ body {
 .service-card:nth-child(4) .service-card-title {
     transform: rotate(45deg) translate(47px, 47px);
 }
+@media screen and (max-width: 640px) {
+    .service-card:nth-child(1) .service-card-title {
+        transform: rotate(-45deg) translate(-21px, 20px);
+    }
+    .service-card:nth-child(2) .service-card-title {
+        transform: rotate(-135deg) translate(-28px, -29px);
+    }
+    .service-card:nth-child(3) .service-card-title {
+        transform: rotate(-225deg) translate(29px, -28px);
+    }
+    .service-card:nth-child(4) .service-card-title {
+        transform: rotate(45deg) translate(21px, 21px);
+    }
+}
 
 .service-card:nth-child(1) .service-content {
-    transform: rotate(-45deg) translate(33px, 50px);
+    transform: rotate(-45deg) translate(33px, 45px);
 }
 .service-card:nth-child(2) .service-content {
     transform: rotate(-135deg) translate(-36px, 35px);
 }
 .service-card:nth-child(3) .service-content {
-    transform: rotate(-225deg) translate(29px, -30px);
+    transform: rotate(-225deg) translate(-17px, -50px);
 }
 .service-card:nth-child(4) .service-content {
     transform: rotate(45deg) translate(66px, -3px);
+}
+@media screen and (max-width: 640px) {
+    .service-card:nth-child(1) .service-content {
+        transform: rotate(-45deg) translate(19px, 30px);
+    }
+    .service-card:nth-child(2) .service-content {
+        transform: rotate(-135deg) translate(-23px, 19px);
+    }
+    .service-card:nth-child(3) .service-content {
+        transform: rotate(-225deg) translate(-13px, -30px);
+    }
+    .service-card:nth-child(4) .service-content {
+        transform: rotate(45deg) translate(44px, -8px);
+    }
 }
 
 .active {
@@ -102,6 +152,15 @@ body {
     height: 400px;
     width: 400px;
     cursor: default;
+}
+@media screen and (max-width: 640px) {
+    .active {
+        left: calc(50% - 125px);
+        top: calc(50% - 125px);
+        height: 255px;
+        width: 255px;
+        cursor: default;
+    }
 }
 
 .customer-bubble {
@@ -147,10 +206,6 @@ body {
     object-fit: contain;
     display: block;
     margin: 0 auto;
-}
-
-.projects-swiper {
-    height: 60vh;
 }
 
 .projects-swiper .swiper-slide {
