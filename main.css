@@ -9,7 +9,24 @@ body {
     background-color: black;
 }
 
-.navbar-container {
+.loadingWindow {
+    position: absolute;
     z-index: 10;
-    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingWindow > div .crossmotion-x {
+    width: 90px;
+    animation: rotateForever 2s infinite;
+}
+
+@keyframes rotateForever {
+    from {
+        transform: rotate(360deg);
+    }
 }

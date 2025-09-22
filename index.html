@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
+    <div class="loadingWindow">
+        <div class="flex items-center">
+            <img src="images/CrossMotion_x.webp" class="crossmotion-x"><img src="images/CrossMotion.png" alt="CrossMotion" class="ml-4">
+        </div>
+    </div>
+
     <header>
         <nav class="relative bg-black/50">
             <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
@@ -59,7 +65,6 @@
                 </div>
             </el-disclosure>
         </nav>
-
 
         <div class="banner bg-[url(images/buildings_cross.webp)]
                     lg:h-[80vh] md:h-[70vh] h-[50vh]
@@ -645,6 +650,7 @@
         </div>
     </footer>
 
+    <script src="loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
