@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 circle.querySelector(".service-content").classList.add("hidden-fade");
             }, 200);
         });
-        if (window.innerWidth <= 640) {
+        if (window.innerWidth <= 768) {
             serviceCircle.classList.remove('top-margin', 'bottom-margin');
         }
     }
@@ -41,11 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 circle.querySelector(".service-content").classList.remove("hidden-fade");
                 circle.querySelector(".service-content").classList.add("visible-fade");
             }, 200);
-            if (window.innerWidth <= 640) {
+            if (window.innerWidth <= 768) {
                 updateCircleWrapperMargin();
             }
         });
     });
+
     document.addEventListener('click', e => {
         if (!e.target.closest(".service-card")) {
             closeAllServiceCards();

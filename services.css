@@ -1,4 +1,4 @@
-@media screen and (max-width: 640px) {
+@media screen and (width <= 768px) {
     .services-circle {
         margin-top: 0;
         margin-bottom: 0;
@@ -22,10 +22,19 @@
 
     transition: ease-in-out .5s;
 }
-@media screen and (max-width: 640px) {
+@media screen and (width <= 768px) {
     .service-card {
         left: calc(50% - 50px);
         top: calc(50% - 50px);
+        cursor: pointer;
+
+        transition: ease-in-out .5s;
+    }
+}
+@media screen and (width > 768px) and (width <= 1024px) {
+    .service-card {
+        left: calc(50% - 75px);
+        top: calc(50% - 75px);
         cursor: pointer;
 
         transition: ease-in-out .5s;
@@ -61,7 +70,7 @@
 .service-card:nth-child(4) {
     transform: rotate(-45deg) translateX(400px);
 }
-@media screen and (max-width: 640px) {
+@media screen and (width <= 768px) {
     .service-card:nth-child(1) {
         transform: rotate(45deg) translateX(200px);
     }
@@ -73,6 +82,20 @@
     }
     .service-card:nth-child(4) {
         transform: rotate(-45deg) translateX(200px);
+    }
+}
+@media screen and (width > 768px) and (width <= 1024px) {
+    .service-card:nth-child(1) {
+        transform: rotate(45deg) translateX(250px);
+    }
+    .service-card:nth-child(2) {
+        transform: rotate(135deg) translateX(250px);
+    }
+    .service-card:nth-child(3) {
+        transform: rotate(225deg) translateX(250px);
+    }
+    .service-card:nth-child(4) {
+        transform: rotate(-45deg) translateX(250px);
     }
 }
 
@@ -88,7 +111,7 @@
 .service-card:nth-child(4) .service-card-title {
     transform: rotate(45deg) translate(47px, 47px);
 }
-@media screen and (max-width: 640px) {
+@media screen and (width <= 768px) {
     .service-card:nth-child(1) .service-card-title {
         transform: rotate(-45deg) translate(-21px, 20px);
     }
@@ -100,6 +123,20 @@
     }
     .service-card:nth-child(4) .service-card-title {
         transform: rotate(45deg) translate(21px, 21px);
+    }
+}
+@media screen and (width > 768px) and (width <= 1024px) {
+    .service-card:nth-child(1) .service-card-title {
+        transform: rotate(-45deg) translate(-33px, 31px);
+    }
+    .service-card:nth-child(2) .service-card-title {
+        transform: rotate(-135deg) translate(-41px, -41px);
+    }
+    .service-card:nth-child(3) .service-card-title {
+        transform: rotate(-225deg) translate(44px, -41px);
+    }
+    .service-card:nth-child(4) .service-card-title {
+        transform: rotate(45deg) translate(34px, 32px);
     }
 }
 
@@ -115,7 +152,7 @@
 .service-card:nth-child(4) .service-content {
     transform: rotate(45deg) translate(66px, -3px);
 }
-@media screen and (max-width: 640px) {
+@media screen and (width <= 768px) {
     .service-card:nth-child(1) .service-content {
         transform: rotate(-45deg) translate(19px, 30px);
     }
@@ -129,6 +166,20 @@
         transform: rotate(45deg) translate(44px, -8px);
     }
 }
+@media screen and (width > 768px) and (width <= 1024px) {
+    .service-card:nth-child(1) .service-content {
+        transform: rotate(-45deg) translate(23px, 31px);
+    }
+    .service-card:nth-child(2) .service-content {
+        transform: rotate(-135deg) translate(-26px, 16px);
+    }
+    .service-card:nth-child(3) .service-content {
+        transform: rotate(-225deg) translate(-13px, -35px);
+    }
+    .service-card:nth-child(4) .service-content {
+        transform: rotate(45deg) translate(43px, -9px);
+    }
+}
 
 .active {
     left: calc(50% - 200px);
@@ -137,12 +188,21 @@
     width: 400px;
     cursor: default;
 }
-@media screen and (max-width: 640px) {
+@media screen and (width <= 768px) {
     .active {
         left: calc(50% - 125px);
         top: calc(50% - 125px);
         height: 255px;
         width: 255px;
+        cursor: default;
+    }
+}
+@media screen and (width > 768px) and (width <= 1024px) {
+    .active {
+        left: calc(50% - 150px);
+        top: calc(50% - 150px);
+        height: 275px;
+        width: 275px;
         cursor: default;
     }
 }
