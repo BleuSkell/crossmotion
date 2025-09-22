@@ -20,7 +20,7 @@
 
     <header>
         <nav class="navbar relative">
-            <div class="fixed w-full z-50 bg-black/50">
+            <div class="fixed w-full z-5 bg-black/50">
                 <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-center">
                         <!-- Mobile menu button -->
@@ -48,23 +48,25 @@
                                     <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">
                                         ONZE DIENSTEN
                                     </a>
-                                    <div class="servicesNavLinks hidden group-hover:flex flex-row absolute bg-black/80 p-4 top-12 left-0 mt-1">
-                                        <div class="flex flex-col mr-16">
-                                            <h3 class="text-white font-bold">ONTWIKKELING</h3>
-                                            <a href="#" class="text-gray-300 hover:text-white">Webdesign</a>
-                                            <a href="#" class="text-gray-300 hover:text-white">E-commerce</a>
-                                            <a href="#" class="text-gray-300 hover:text-white">Module ontwikkeling</a>
-                                            <a href="#" class="text-gray-300 hover:text-white">Maatwerk applicaties</a>
-                                        </div>
-                                        <div class="flex flex-col mr-16">
-                                            <h3 class="text-white font-bold">HOSTING</h3>
-                                            <a href="#" class="text-gray-300 hover:text-white">Shared hosting oplossingen</a>
-                                            <a href="#" class="text-gray-300 hover:text-white">Magento geoptimaliseerde hosting</a>
-                                        </div>
-                                        <div class="flex flex-col">
-                                            <h3 class="text-white font-bold">ONDERHOUD</h3>
-                                            <a href="#" class="text-gray-300 hover:text-white">Magento hosting & onderhoud</a>
-                                            <a href="#" class="text-gray-300 hover:text-white">Woocommerce hosting & onderhoud</a>
+                                    <div class="servicesNavLinks hidden group-hover:flex absolute left-0 pt-13">
+                                        <div class="bg-black/80 flex flex-row p-4">
+                                            <div class="flex flex-col mr-16">
+                                                <h3 class="text-white font-bold">ONTWIKKELING</h3>
+                                                <a href="#" class="text-gray-300 hover:text-white">Webdesign</a>
+                                                <a href="#" class="text-gray-300 hover:text-white">E-commerce</a>
+                                                <a href="#" class="text-gray-300 hover:text-white">Module ontwikkeling</a>
+                                                <a href="#" class="text-gray-300 hover:text-white">Maatwerk applicaties</a>
+                                            </div>
+                                            <div class="flex flex-col mr-16">
+                                                <h3 class="text-white font-bold">HOSTING</h3>
+                                                <a href="#" class="text-gray-300 hover:text-white">Shared hosting oplossingen</a>
+                                                <a href="#" class="text-gray-300 hover:text-white">Magento geoptimaliseerde hosting</a>
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <h3 class="text-white font-bold">ONDERHOUD</h3>
+                                                <a href="#" class="text-gray-300 hover:text-white">Magento hosting & onderhoud</a>
+                                                <a href="#" class="text-gray-300 hover:text-white">Woocommerce hosting & onderhoud</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -75,11 +77,12 @@
                                 <!-- Desktop dropdown contact -->
                                 <div class="flex flex-col group relative text-gray-300">
                                     <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">CONTACT</a>
-                                    <div
-                                            class="contactNavLinks hidden group-hover:flex flex-col absolute bg-black/80 p-4 top-12 left-0 mt-1">
-                                        <div class="flex flex-col">
-                                            <h3 class="text-white font-bold">Werken bij</h3>
-                                            <a href="#" class="text-gray-300 hover:text-white">Stagiar webdevelopment</a>
+                                    <div class="contactNavLinks hidden group-hover:flex absolute left-0 pt-13">
+                                        <div class="flex flex-col bg-black/80 p-4">
+                                            <div class="flex flex-col">
+                                                <h3 class="text-white font-bold">Werken bij</h3>
+                                                <a href="#" class="text-gray-300 hover:text-white">Stagiar webdevelopment</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -186,22 +189,25 @@
                     <p class="
                               lg:text-xl lg:text-right lg:mb-12 lg:pl-[55rem]
                               md:mb-6 md:pl-0 md:text-lg
-                              text-base mb-4
-                    ">
+                              text-base mb-4"
+                       data-aos="fade-left"
+                    >
                         Je website is in veel gevallen het eerste contact dat je met je  klant hebt. Steeds vaker zelfs het enige. Het is daarom van belang dat dit eerste contact soepel verloopt en de gewenste indruk achterlaat. CrossMotion ontwikkelt websites welke opvallen door zowel techniek als vormgeving.
                     </p>
 
                     <p class="
                               lg:text-xl lg:pr-[55rem]
                               md:pr-0 md:text-lg
-                              text-base
-                    ">
+                              text-base"
+                        data-aos="fade-right"
+                       data-aos-duration="1000"
+                    >
                         CrossMotion is een full service bureau. Dit houdt in dat we zowel het grafische aspect, als de techniek en gebruikerservaring in huis kunnen ontwikkelen en optimaliseren. Korte lijntjes, snel schakelen en weinig overhead dus.
                     </p>
                 </div>
             </div>
 
-            <div class="services-circle-wrapper w-full flex flex-row justify-center" data-aos="zoom-in" data-aos-duration="500">
+            <div class="services-circle-wrapper w-full flex flex-row justify-center" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="services-circle relative border-4 border-[#912900] rounded-[50%]
                             lg:h-[800px] lg:w-[800px]
                             md:h-[500px] md:w-[500px]
@@ -457,7 +463,7 @@
                 Wat onze klanten zeggen
             </h1>
 
-            <div class="swiper testimonial-swiper flex flex-col items-between justify-between">
+            <div class="swiper testimonial-swiper flex flex-col items-between justify-between" data-aos="fade-left" data-aos-duration="700">
                 <div class="flex flex-row justify-evenly w-full swiper-wrapper">
                     <div class="customer-bubble swiper-slide bg-[#DD7600] text-white w-[30rem] p-6 relative">
                         <span class="bubble-tail"></span>
