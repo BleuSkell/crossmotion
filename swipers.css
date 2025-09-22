@@ -1,0 +1,79 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/*projects*/
+.projects-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .2s;
+}
+
+.project-slide {
+    position: relative;
+    transition: all .2s;
+}
+
+.project-slide img {
+    object-fit: cover;
+}
+
+.project-slide-text {
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.project-slide:hover .project-slide-text {
+    opacity: .7;
+}
+.project-slide:hover .project-slide-text h1 {
+    opacity: 1;
+}
+
+/*testimonials*/
+.customer-bubble {
+    background: #DD7600;
+    border-radius: 16px;
+    position: relative;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.bubble-tail {
+    position: absolute;
+    left: 40px;
+    bottom: -16px;
+    width: 36px;
+    height: 25px;
+    background: #DD7600;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    z-index: 1;
+}
+
+.testimonial-button {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.testimonial-button-icon {
+    color: #ffffff;
+}
+
+/*companies*/
+.companies {
+    overflow: hidden;
+}
+
+.companies-wrapper img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
